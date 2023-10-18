@@ -1,0 +1,20 @@
+body{
+    padding: 15px;
+    margin-top: 5px;
+    background-color: #c3f5f4;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    border: 3px double red;
+    background-color: antiquewhite;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 40px;
+}
