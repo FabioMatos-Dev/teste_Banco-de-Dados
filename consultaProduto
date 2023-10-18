@@ -1,0 +1,58 @@
+<?php
+include "conecta.php";
+$sql = "SELECT * FROM PRODUTO";
+//Busca na tabela PRODUTO todos os registros, ou linhas
+$rs = mysqli_query($conexao,$sql);
+$total_registros = mysqli_num_rows($rs);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consulta_style.css">
+    <title>Consulta Produto</title>
+</head>
+<body>
+    <header>
+        <h1>RELAÇÃO DE PRODUTOS</h1>
+    </header>
+
+    <div class="flex-container">
+        <table style="margin-left: 50px;margin-right: 50px;background-color:white;height:150%;width:150%;"; cellspacing="0" border="1">
+            <thead>
+                <tr>
+                    <th style="background-color:#B2FE66";>Descricao</th>
+                    <th style="background-color:#FDDC53";>QTDE</th>
+                    <th style="background-color:#82C2D1";>Valor</th>
+                    <th style="background-color:#CED315";>Ações</th>
+                </tr>
+            </thead>
+        <?php
+            while ($reg = mysqli_fetch_array($rs)){
+                $id = $reg["IDPRODUTO"];
+                $Descricao = $reg["DESCRICAO"];
+                $QTDE = $reg["QTDE"];
+                $Valor = $reg["VALOR"];
+            //} While não será fechado aqui
+        ?>
+
+        <tr>
+            <td><?php print $Descricao; ?></td>
+            <td><?php print $QTDE; ?></td>
+            <td><?php print $Valor; ?></td>
+        </tr>
+        <?php } ?>
+        </table>
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div>
+        <a href="http://localhost/TADS2023/#">
+        <img src="volte.png" alt="Image" height="40" width="80" /></a>
+    </div>
+</body>
+</html>
