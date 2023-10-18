@@ -12,7 +12,7 @@
     </header>
 
 
-    <form style="padding: 15px;margin-left: 100px;margin-right: 600px;margin-top:30px;border:2px solid red;background-color:#A6D67A ";action="gravaPessoa.php" method="post">
+    <form style="padding: 15px;margin-left: 100px;margin-right: 600px;margin-top:30px;border:2px solid red;background-color:#A6D67A "; action="gravaPessoa.php" method="post">
         Nome: &nbsp;&nbsp;&nbsp;<input type="text" name="cNome"><br><br>
         Celular: &nbsp;<input type="text" name="cCelular"><br><br>
         Email: &nbsp;&nbsp;&nbsp;<input type="text" name="cEmail"><br><br>
