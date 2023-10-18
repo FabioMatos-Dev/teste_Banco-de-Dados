@@ -11,7 +11,7 @@
         <h1>CADASTRO DE PRODUTO</h1>
     </header>
 
-    <form style="padding: 15px;margin-left: 100px;margin-right: 600px;margin-top:30px;border:2px solid red;background-color:#A6D67A ";action="gravaProduto.php" method="post">
+    <form style="padding: 15px;margin-left: 100px;margin-right: 600px;margin-top:30px;border:2px solid red;background-color:#A6D67A "; action="gravaProduto.php" method="post">
         Descricao:  <input type="text" name="cDescricao"><br><br>
         QTDE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="cQTDE"><br><br>
         Valor: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="cValor"><br><br>
